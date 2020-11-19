@@ -1,0 +1,5 @@
+<h1>NgRx tree</h1>
+
+<ng-container *ngFor="let node of rootNodes$ | async as rootNodes">
+    <smart-tree-node [nodeId]="node.id"></smart-tree-node>
+</ng-container>

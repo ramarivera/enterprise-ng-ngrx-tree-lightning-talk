@@ -1,0 +1,3 @@
+<div class="smart-tree-node" *ngIf="treeNode$ | async as treeNode">
+    <tree-node [treeNode]="treeNode" (onToggleExpandedEvent)="toggleExpanded($event)"></tree-node>
+</div>
